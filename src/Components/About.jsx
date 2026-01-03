@@ -44,12 +44,11 @@ const About = () => {
     <section className="section" id="about">
       <div className="section-header">
         <p className="eyebrow">Про додаток</p>
-        <h2>SteamDB у форматі, створеному для iPhone на Swift</h2>
+        <h2>SteamDB у форматі, створеному для iOS</h2>
         <p className="section-lead">
-          Нативний Swift/SwiftUI додаток переносить функціональність steamdb.info
-          у знайомі патерни iOS: вкладки, карти, швидкі дії та розумні
-          сповіщення. Жодних компромісів — лише зручність, швидкість і красива
-          типографіка.
+          Додаток переносить функціональність steamdb.info у знайомі патерни
+          iOS: вкладки, карти, швидкі дії та розумні сповіщення. Жодних
+          компромісів — лише зручність, швидкість і красива типографіка.
         </p>
       </div>
       <div className="feature-grid">

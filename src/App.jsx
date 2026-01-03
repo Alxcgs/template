@@ -16,7 +16,7 @@ import "./styles.css";
 
 const siteProps = {
   name: "SteamDB Mobile",
-  title: "Нативний iPhone-додаток на Swift з повним функціоналом SteamDB",
+  title: "iOS-додаток для глибокої аналітики Steam у знайомому форматі",
   email: "hello@steamdbmobile.app",
   testflightUrl: "https://testflight.apple.com/",
   appStore: "https://apps.apple.com/",

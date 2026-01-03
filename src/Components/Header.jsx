@@ -16,14 +16,7 @@ const Header = ({ testflightUrl }) => {
         <a href="#portfolio">Екрани</a>
         <a href="#footer">Контакти</a>
       </nav>
-      <a
-        className="nav-cta"
-        href={testflightUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        TestFlight
-      </a>
+      <button className="nav-cta">TestFlight</button>
     </header>
   );
 };

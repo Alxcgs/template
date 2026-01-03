@@ -11,13 +11,13 @@ const Home = ({ name, title }) => {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <span className="badge">iOS 17 · SwiftUI · Swift</span>
+        <span className="badge">iOS 17 · SwiftUI</span>
         <h1>{name}</h1>
         <p className="hero-title">{title}</p>
         <p className="hero-subtitle">
-          Нативний iPhone-додаток на Swift, який переносить SteamDB у зручний
-          мобільний формат: ціни, історія змін, пікові гравці, пакети, депо та
-          оновлення з блискавичним пошуком, фільтрами та push-сповіщеннями.
+          Уся база SteamDB — ціни, історія змін, пікові гравці, пакети, депо та
+          оновлення — в нативному iOS інтерфейсі з швидким пошуком, фільтрами та
+          push-сповіщеннями.
         </p>
         <div className="hero-actions">
           <button className="primary">Отримати доступ</button>
