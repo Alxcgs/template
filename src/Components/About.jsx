@@ -1,83 +1,64 @@
 /**
  * About component
  *
- * Space for you to describe more about yourself.
+ * Explains the purpose and core features of the application.
  */
 
 import React from "react";
 
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
-import image from "../images/motion-background.jpg";
-
-const imageAltText = "purple and blue abstract background";
-
-/**
- * Sort description that expands on your title on the Home component.
- */
-const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
-
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
-const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+const features = [
+  {
+    title: "Повний каталог SteamDB",
+    description:
+      "Окремі сторінки для ігор, DLC, пакетів, демо та саундтреків з історією змін і тегами.",
+  },
+  {
+    title: "Глибока аналітика цін",
+    description:
+      "Графіки цін по регіонах, історія розпродажів, конвертація валют та індикатор найкращої ціни.",
+  },
+  {
+    title: "Статистика онлайну",
+    description:
+      "Живі графіки гравців, піки за добу/тиждень, порівняння проєктів та тренди.",
+  },
+  {
+    title: "Інструменти реліз-менеджменту",
+    description:
+      "Відстеження депо, білдів, маніфестів і змін файлів з push-сповіщеннями.",
+  },
+  {
+    title: "Смарт-пошук",
+    description:
+      "Пошук за AppID, PackageID або назвою з фільтрами жанру, ціни та рейтингу.",
+  },
+  {
+    title: "Віджети та Live Activities",
+    description:
+      "Ціни й онлайн прямо на екрані блокування, інтеграція зі Spotlight та Siri.",
+  },
 ];
-
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
-const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+    <section className="section" id="about">
+      <div className="section-header">
+        <p className="eyebrow">Про додаток</p>
+        <h2>SteamDB у форматі, створеному для iPhone на Swift</h2>
+        <p className="section-lead">
+          Нативний Swift/SwiftUI додаток переносить функціональність steamdb.info
+          у знайомі патерни iOS: вкладки, карти, швидкі дії та розумні
+          сповіщення. Жодних компромісів — лише зручність, швидкість і красива
+          типографіка.
+        </p>
+      </div>
+      <div className="feature-grid">
+        {features.map((feature) => (
+          <div className="feature-card" key={feature.title}>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -14,38 +14,24 @@ import Portfolio from "./Components/Portfolio";
 
 import "./styles.css";
 
-/**
- * This object represents your information. The project is set so that you
- * only need to update these here, and values are passed a properties to the
- * components that need that information.
- *
- * Update the values below with your information.
- *
- * If you don't have one of the social sites listed, leave it as an empty string.
- */
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
-  medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  name: "SteamDB Mobile",
+  title: "Нативний iPhone-додаток на Swift з повним функціоналом SteamDB",
+  email: "hello@steamdbmobile.app",
+  testflightUrl: "https://testflight.apple.com/",
+  appStore: "https://apps.apple.com/",
+  steamdb: "https://steamdb.info",
+  support: "https://steamdb.info/api/",
 };
-
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
 
 const App = () => {
   return (
     <div id="main">
-      <Header />
+      <Header testflightUrl={siteProps.testflightUrl} />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Footer {...siteProps} />
     </div>
   );
 };
