@@ -18,6 +18,7 @@ const siteProps = {
   name: "SteamDB Mobile",
   title: "iOS-додаток для глибокої аналітики Steam у знайомому форматі",
   email: "hello@steamdbmobile.app",
+  testflightUrl: "https://testflight.apple.com/",
   appStore: "https://apps.apple.com/",
   steamdb: "https://steamdb.info",
   support: "https://steamdb.info/api/",
@@ -26,7 +27,7 @@ const siteProps = {
 const App = () => {
   return (
     <div id="main">
-      <Header />
+      <Header testflightUrl={siteProps.testflightUrl} />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />

@@ -4,8 +4,9 @@
  * Top navigation bar for the landing page.
  */
 import React from "react";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = ({ testflightUrl }) => {
   return (
     <header className="top-nav">
       <div className="logo">SteamDB Mobile</div>
@@ -18,6 +19,14 @@ const Header = () => {
       <button className="nav-cta">TestFlight</button>
     </header>
   );
+};
+
+Header.defaultProps = {
+  testflightUrl: "",
+};
+
+Header.propTypes = {
+  testflightUrl: PropTypes.string,
 };
 
 export default Header;

@@ -19,8 +19,17 @@ const Footer = ({ name, email, appStore, steamdb, support }) => {
           </p>
         </div>
         <div className="footer-actions">
-          <button className="primary">Приєднатися до TestFlight</button>
-          <button className="ghost">Попросити демо</button>
+          <a
+            className="primary"
+            href={appStore}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Приєднатися до TestFlight
+          </a>
+          <a className="ghost" href={`mailto:${email}`}>
+            Попросити демо
+          </a>
         </div>
       </div>
       <div className="footer-links">
